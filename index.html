@@ -3,7 +3,7 @@
 <head>   
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+        <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
         <script src="https://cdn.tailwindcss.com"></script>
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css">       
         <script defer src="main.js"></script>
@@ -17,7 +17,7 @@
 <nav class="relative px-4 py-4 flex justify-between items-center">
 
     <a class="text-3xl font-bold leading-none" href="#"> <!--PARTE DO LOGO-->
-        <img src="logo.png" alt="" class="h-12">
+        <img src="logo.png" alt="" class="h-14">
     </a>
   
     <!--DARK LIGHT TOGGLE-->
@@ -94,12 +94,11 @@
     </nav>
 </div>
         <!--HERO-->
-        <section><!--HERO SECTION--> 
+        <section class="bg-[url] bg-center bg-no-repeat bg-cover"><!--HERO SECTION--> 
             <div class="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between mt-12"> <!--container dos elementos textos e imagem-->
-
-                <div class="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
-                    <!-- parte do texto -->
-                    <h1 class="text-black text-5xl font-bold leadi sm:text-6xl">
+        
+                <div class="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left lg:w-2/5"> <!-- parte do texto -->
+                    <h1 class="text-black text-5xl font-bold leading-tight sm:text-6xl">
                         Ac mattis
                         <span class="text-indigo-700">senectus</span>erat pharetra
                     </h1>
@@ -108,14 +107,15 @@
                         <br class="hidden md:inline lg:hidden">turpis pulvinar, est scelerisque ligula sem
                     </p>
                 </div>
-                
-
-                <div class="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128"> <!--parte de colocar o bichinho-->
-                    <img src="logo.png" alt="" class="object-contain h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
+        
+                <div class="flex items-center justify-center p-6 mt-8 lg:mt-0 lg:w-2/5"> <!--parte de colocar o bichinho-->
+                    <img src="tokitoki.png" alt="" class="object-contain max-w-full h-auto">
                 </div>
-
+        
             </div>
-        </section><!--fecha a navbar e o hero section-->
+        </section><!--fecha hero section-->
+        
+        
 
       </body>           
 </html>
