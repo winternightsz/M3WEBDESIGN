@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/styles/tailwind.css">
+    <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">       
+    <script defer src="js/main.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Tokilingo</title>
+</head>
+      <body>
+ 
+        <!--NAVBAR-->
+
+<nav class="relative px-4 py-4 flex justify-between items-center">
+
+    <a class="text-3xl font-bold leading-none" href="#"> <!--PARTE DO LOGO-->
+        <img src="imagens/logo.png" alt="" class="h-14">
+    </a>
+  
+    <!--DARK LIGHT TOGGLE-->
+
+    <!--Botao pra chamar Home-->
+    <div class="lg:hidden">
+        <button class="navbar-burger flex items-center text-blue-600 p-3">
+            <svg class="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <title>Mobile menu</title>
+                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path> <!--barrinhas pra funcionar no celular-->
+            </svg>
+        </button>
+    </div>
+
+    <ul class="hidden absolute top-1/2 right-0 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
+        <li><a class="text-12 text-indigo-700 font-bold" href="#">Home</a></li>
+
+        <li><a class="text-12 text-black font-semibold hover:text-gray-500" href="#">Alfabeto</a></li>
+
+        <li><a class="text-12 text-black font-semibold hover:text-gray-500" href="basico.html">Niveis</a></li>
+
+        <li><a class="text-12 text-black font-semibold hover:text-gray-500" href="#">Contato</a></li>
+
+        <li><a class="text-12 text-black font-semibold hover:text-gray-500" href="login.html">Login</a></li>
+    </ul>
+    <a class=" lg:inline-block py-2 px-6 bg-indigo-700 hover:bg-indigo-900 text-sm text-white font-bold rounded-xl transition duration-200" href="#">Faça o teste</a>
+</nav>
+
+<!--PARTE PROS CELULARES-->
+<div class="navbar-menu relative z-50 hidden">
+
+    <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div><!--cor de tras do menu-->
+
+    <nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
+
+        <div class="flex items-center mb-8">
+            <a class="mr-auto text-3xl font-bold leading-none" href="#">
+                <img src="imagens/favicon.png" alt="" class="h-12">
+            </a>
+            <button class="navbar-close">
+                <svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path> <!--o fechar pra funcionar no celular-->
+                </svg>
+            </button>
+        </div>
+
+        <div> <!--parte das opcoes-->
+            <ul>
+                <li class="mb-1">
+                    <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">Home</a>
+                </li>
+                <li class="mb-1">
+                    <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">Alfabeto</a>
+                </li>
+                <li class="mb-1">
+                    <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="basico.html">Niveis</a>
+                </li>
+                <li class="mb-1">
+                    <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">Contato</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="mt-auto"> <!--Parte do signup e copyright-->
+            <div class="pt-6">
+                <a class="block px-4 py-3 mb-3 leading-loose text-xs text-center font-semibold leading-none bg-gray-50 hover:bg-gray-100 rounded-xl" href="login.html">Login</a>
+                <a class="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-indigo-700 hover:bg-indigo-900  rounded-xl" href="#">Cadastre-se</a>
+            </div>
+            <p class="my-4 text-xs text-center text-gray-400">
+                <span>Copyright © 2023</span>
+            </p>
+        </div>
+
+    </nav>
+</div>
+
+
+    </body>
+</html>
