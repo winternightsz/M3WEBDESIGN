@@ -1,22 +1,16 @@
 /*Para background de cards em fundo branco*/
 .cards-bg {
-    background-color: rgb(249, 249, 249);
+    background-color: rgb(252, 252, 252);
   }
 
 /*Timeline*/
-.circle {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    font-size: 18px;
+.timeline {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
   }
   
-  .timeline {
-    position: relative;
-    display: flex; 
-    justify-content: center;
-  }
-
   .line {
     position: absolute;
     top: 0;
@@ -26,11 +20,27 @@
     background-color: #E2E8F0;
     transform: translateX(-50%);
   }
-
-  .circle-right {
-    margin-left: 80px;
+  
+  .timeline a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
-  .circle-left {
-    margin-right: 80px;
+  .timeline a:nth-child(even) {
+    margin-right: 140px; /* Adjust this value for spacing */
   }
+  
+  .timeline a:nth-child(odd) {
+    margin-left: 140px; /* Adjust this value for spacing */
+  }
+
+  /*SHADOW pros circulos*/
+
+  .shadow-custom {
+    box-shadow: 0 4px 6px #5a5ada36 , 0 6px 10px rgba(89, 89, 220, 0.173);
+  }
+
+  
+  
+  
