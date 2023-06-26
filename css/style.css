@@ -1,0 +1,36 @@
+/*Para background de cards em fundo branco*/
+.cards-bg {
+    background-color: rgb(249, 249, 249);
+  }
+
+/*Timeline*/
+.circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 18px;
+  }
+  
+  .timeline {
+    position: relative;
+    display: flex; 
+    justify-content: center;
+  }
+
+  .line {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 4px;
+    height: 100%;
+    background-color: #E2E8F0;
+    transform: translateX(-50%);
+  }
+
+  .circle-right {
+    margin-left: 80px;
+  }
+
+  .circle-left {
+    margin-right: 80px;
+  }
