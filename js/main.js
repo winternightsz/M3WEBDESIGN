@@ -115,34 +115,34 @@ if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.match
   // Array de perguntas e respostas
   const questions = [
     {
-      question: "Qual é a capital do Brasil?",
-      options: ["Rio de Janeiro", "São Paulo", "Brasília", "Salvador"],
+      question: "Qual é a palavra coreana para olá?",
+      options: ["안녕", "여보세요", "안녕하세요", "안녕히 계세요"],
       answer: 2 // A resposta correta é a opção de índice 2 (Brasília)
     },
     {
-      question: "Qual é a fórmula química da água?",
-      options: ["H2O2", "CO2", "H2O", "O2"],
-      answer: 2 // A resposta correta é a opção de índice 2 (H2O)
+      question: "Como se diz obrigado em coreano?",
+      options: ["고맙습니다", "감사합니다", "죄송합니다", "안녕하세요"],
+      answer: 1 // A resposta correta é a opção de índice 1 
     },
     {
-      question: "Qual é o maior planeta do sistema solar?",
-      options: ["Júpiter", "Vênus", "Saturno", "Terra"],
+      question: "Qual é a palavra coreana para parabéns?",
+      options: ["축하합니다", "축하해요", "환영합니다", "고마워요"],
       answer: 0 // A resposta correta é a opção de índice 0 (Júpiter)
     },
     {
-      question: "Quem pintou a Mona Lisa?",
-      options: ["Michelangelo", "Leonardo da Vinci", "Pablo Picasso", "Vincent van Gogh"],
+      question: "Qual é a palavra coreana para comida?",
+      options: ["물", "음식", "밥", "점심"],
       answer: 1 // A resposta correta é a opção de índice 1 (Leonardo da Vinci)
     },
     {
-      question: "Qual é o país com a maior população do mundo?",
-      options: ["Estados Unidos", "Índia", "China", "Brasil"],
+      question: "Qual é a forma casual da frase Você está indo? em coreano??",
+      options: ["가십니까?", " 가고 있어요?", "가나요?", "가세요?"],
       answer: 2 // A resposta correta é a opção de índice 2 (China)
     },
     {
-      question: "Qual é o maior oceano do mundo?",
-      options: ["Atlântico", "Índico", "Pacífico", "Ártico"],
-      answer: 2 // A resposta correta é a opção de índice 2 (Pacífico)
+      question: "O que significa a expressão 헐 em coreano??",
+      options: ["É uma expressão de surpresa, equivalente a uau ou nossa.", " É uma expressão de desagrado, equivalente a eca ou ugh.", "É uma expressão de alegria, equivalente a haha ou hehe.", "É uma expressão de confusão, equivalente a o quê? ou como assim?."],
+      answer: 0 // A resposta correta é a opção de índice 0 
     }
   ];
 
