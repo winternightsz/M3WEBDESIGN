@@ -219,7 +219,35 @@ if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.match
   // Event listener para o botão "Próxima pergunta"
   nextButton.addEventListener("click", checkAnswer);
 
+  //////
 
 
 
+  
+// Função para alterar as cores conforme o botão selecionado
+function alterarCores(corTitulo, corBolinhas) {
+  const titulo = document.getElementById("titulo");
+  const bolinhas = document.querySelectorAll(".timeline a");
+
+  titulo.style.color = corTitulo;
+
+  bolinhas.forEach((bolinha) => {
+    bolinha.style.backgroundColor = corBolinhas;
+  });
+}
+
+// Manipuladores de evento para os botões de alternância
+document.getElementById("basicoBtn").addEventListener("click", function () {
+  alterarCores("blue", "blue");
+});
+
+document.getElementById("intermediarioBtn").addEventListener("click", function () {
+  alterarCores("green", "green");
+});
+
+document.getElementById("avancadoBtn").addEventListener("click", function () {
+  alterarCores("red", "red");
+});
+
+  
   
