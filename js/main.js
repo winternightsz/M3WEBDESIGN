@@ -135,12 +135,12 @@ if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.match
       answer: 1 // A resposta correta é a opção de índice 1 (Leonardo da Vinci)
     },
     {
-      question: "Qual é a forma casual da frase Você está indo? em coreano??",
+      question: "Qual é a forma casual da frase 'Você está indo?' em coreano?",
       options: ["가십니까?", " 가고 있어요?", "가나요?", "가세요?"],
       answer: 2 // A resposta correta é a opção de índice 2 (China)
     },
     {
-      question: "O que significa a expressão 헐 em coreano??",
+      question: "O que significa a expressão 헐 em coreano?",
       options: ["É uma expressão de surpresa, equivalente a uau ou nossa.", " É uma expressão de desagrado, equivalente a eca ou ugh.", "É uma expressão de alegria, equivalente a haha ou hehe.", "É uma expressão de confusão, equivalente a o quê? ou como assim?."],
       answer: 0 // A resposta correta é a opção de índice 0 
     }
