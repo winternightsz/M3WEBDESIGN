@@ -1,3 +1,12 @@
+@font-face {
+  font-family: 'Feather Bold';
+  src: url('../fonts/feather-bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+
 /*Para background de cards em fundo branco*/
 .cards-bg {
     background-color: rgb(252, 252, 252);

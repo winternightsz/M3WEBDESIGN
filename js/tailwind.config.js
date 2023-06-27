@@ -14,3 +14,13 @@ module.exports = {
     // ...
   ],
 }
+
+module.exports = {
+  theme: {
+    extend: {
+      fontFamily: {
+        'feather': ['Feather Bold', 'sans-serif'],
+      },
+    },
+  },
+};
