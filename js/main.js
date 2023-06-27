@@ -109,4 +109,117 @@ if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.match
       alert('Por favor, insira seu endereço de e-mail.');
     }
   }
+  /////////////////////////////////////////////////////////////
+  //QUIZ////////
+
+  // Array de perguntas e respostas
+  const questions = [
+    {
+      question: "Qual é a capital do Brasil?",
+      options: ["Rio de Janeiro", "São Paulo", "Brasília", "Salvador"],
+      answer: 2 // A resposta correta é a opção de índice 2 (Brasília)
+    },
+    {
+      question: "Qual é a fórmula química da água?",
+      options: ["H2O2", "CO2", "H2O", "O2"],
+      answer: 2 // A resposta correta é a opção de índice 2 (H2O)
+    },
+    {
+      question: "Qual é o maior planeta do sistema solar?",
+      options: ["Júpiter", "Vênus", "Saturno", "Terra"],
+      answer: 0 // A resposta correta é a opção de índice 0 (Júpiter)
+    },
+    {
+      question: "Quem pintou a Mona Lisa?",
+      options: ["Michelangelo", "Leonardo da Vinci", "Pablo Picasso", "Vincent van Gogh"],
+      answer: 1 // A resposta correta é a opção de índice 1 (Leonardo da Vinci)
+    },
+    {
+      question: "Qual é o país com a maior população do mundo?",
+      options: ["Estados Unidos", "Índia", "China", "Brasil"],
+      answer: 2 // A resposta correta é a opção de índice 2 (China)
+    },
+    {
+      question: "Qual é o maior oceano do mundo?",
+      options: ["Atlântico", "Índico", "Pacífico", "Ártico"],
+      answer: 2 // A resposta correta é a opção de índice 2 (Pacífico)
+    }
+  ];
+
+  let currentQuestion = 0;
+  let score = 0;
+
+  const quizContainer = document.getElementById("quiz-container");
+  const questionElement = document.getElementById("question");
+  const optionsElement = document.getElementById("options");
+  const nextButton = document.getElementById("next-btn");
+
+  // Função para carregar a próxima pergunta
+  function loadQuestion() {
+    const currentQ = questions[currentQuestion];
+    questionElement.textContent = currentQ.question;
+    optionsElement.innerHTML = "";
+
+    currentQ.options.forEach((option, index) => {
+      const optionElement = document.createElement("div");
+      optionElement.classList.add("py-2");
+      optionElement.innerHTML = `
+        <input type="radio" id="option${index}" name="options" value="${index}">
+        <label for="option${index}" class="ml-2">${option}</label>
+      `;
+      optionsElement.appendChild(optionElement);
+    });
+  }
+
+  // Função para verificar a resposta
+  function checkAnswer() {
+    const selectedOption = document.querySelector('input[name="options"]:checked');
+    
+    if (selectedOption) {
+      const answerIndex = parseInt(selectedOption.value);
+
+      const currentQ = questions[currentQuestion];
+      if (answerIndex === currentQ.answer) {
+        score++;
+      }
+
+      currentQuestion++;
+
+      if (currentQuestion < questions.length) {
+        loadQuestion();
+      } else {
+        showResult();
+      }
+    }
+  }
+
+  // Função para exibir o resultado e o nível do usuário
+  function showResult() {
+    quizContainer.innerHTML = `
+      <h2 class="text-2xl font-bold mb-4">Quiz concluído!</h2>
+      <p>Você acertou ${score} de ${questions.length} perguntas.</p>
+      <p>Nível: ${calculateLevel(score)}</p>
+    `;
+  }
+
+  // Função para calcular o nível do usuário com base na pontuação
+  function calculateLevel(score) {
+    if (score === questions.length) {
+      return "Avançado";
+    } else if (score >= questions.length / 2) {
+      return "Intermediário";
+    } else {
+      return "Básico";
+    }
+  }
+
+  // Carregar a primeira pergunta ao carregar a página
+  loadQuestion();
+
+  // Event listener para o botão "Próxima pergunta"
+  nextButton.addEventListener("click", checkAnswer);
+
+
+
+
   
