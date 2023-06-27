@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>   
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/styles/tailwind.css">
-    <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
-    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">       
-    <script defer src="js/main.js"></script>
-    <link rel="stylesheet" href="css/style.css">
-    <title>Tokilingo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/styles/tailwind.css">
+        <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="faviconis/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="faviconis/favicon-16x16.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="faviconis/favicon-32x32.png">
+        <link rel="manifest" href="faviconis/site.webmanifest">
+        <link rel="stylesheet" href="https://rsms.me/inter/inter.css">       
+        <script defer src="js/main.js"></script>
+        <link rel="stylesheet" href="css/style.css">
+        <title>Tokilingo</title>
 </head>
-      <body >
-
-<!--NAVBAR-->
+      <body>
+ 
+        <!--NAVBAR-->
 
 <nav class="relative px-4 py-4 flex justify-between items-center">
 
     <a class="text-3xl font-bold leading-none" href="#"> <!--PARTE DO LOGO-->
-        <img src="imagens/logotokiazul.png" alt="" class="h-12">
+        <img src="imagens/logotokiazul.png" alt="" class="h-14">
     </a>
   
     <!--DARK LIGHT TOGGLE-->
@@ -29,7 +32,7 @@
         <button class="navbar-burger flex items-center text-blue-600 p-3">
             <svg class="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                 <title>Mobile menu</title>
-                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path> <!--barrinhas pra funcionar no celular-->
             </svg>
         </button>
     </div>
@@ -39,15 +42,15 @@
 
         <li><a class="text-12 text-black font-semibold hover:text-gray-500" href="alfabeto.html">Alfabeto</a></li>
 
-        <li><a class="text-12 text-black font-semibold hover:text-gray-500" href="basico.html">Níveis</a></li>
-        
+        <li><a class="text-12 text-black font-semibold hover:text-gray-500" href="basico.html">Niveis</a></li>
+
         <li><a class="text-12 text-black font-semibold hover:text-gray-500" href="contato.html">Contato</a></li>
 
-        <li><a class="text-12 text-black font-semibold hover:text-gray-500" href="#">Cadastro</a></li>
+        <li><a class="text-12 text-black font-semibold hover:text-gray-500" href="cadastro.html">Cadastro</a></li>
 
         <li><a class="text-12 text-black font-semibold hover:text-gray-500" href="login.html">Login</a></li>
     </ul>
-    <a class=" lg:inline-block py-2 px-6 bg-indigo-700 hover:bg-indigo-900 text-sm text-white font-bold rounded-xl transition duration-200" href="teste.html">Faça o teste</a>
+    <a class=" lg:inline-block py-3 px-6 mr-1 bg-indigo-700 hover:bg-indigo-900 text-md text-white font-bold rounded-xl transition duration-200" href="teste.html">Faça o teste</a>
 </nav>
 
 <!--PARTE PROS CELULARES-->
@@ -63,7 +66,7 @@
             </a>
             <button class="navbar-close">
                 <svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path> <!--o fechar pra funcionar no celular-->
                 </svg>
             </button>
         </div>
@@ -82,19 +85,13 @@
                 <li class="mb-1">
                     <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="contato.html">Contato</a>
                 </li>
-                <li class="mb-1">
-                    <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">Cadastro</a>
-                </li>
-                <li class="mb-1">
-                    <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="login.html">Login</a>
-                </li>
             </ul>
         </div>
 
         <div class="mt-auto"> <!--Parte do signup e copyright-->
             <div class="pt-6">
-                <a class="block px-4 py-3 mb-3 leading-loose text-xs text-center font-semibold leading-none bg-gray-50 hover:bg-gray-100 rounded-xl" href="#">Login</a>
-                <a class="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-indigo-700 hover:bg-indigo-900  rounded-xl" href="#">Cadastre-se</a>
+                <a class="block px-4 py-3 mb-3 leading-loose text-xs text-center font-semibold leading-none bg-gray-50 hover:bg-gray-100 rounded-xl" href="login.html">Login</a>
+                <a class="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-indigo-700 hover:bg-indigo-900  rounded-xl" href="cadastro.html">Cadastre-se</a>
             </div>
             <p class="my-4 text-xs text-center text-gray-400">
                 <span>Copyright © 2023</span>
